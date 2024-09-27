@@ -1,0 +1,21 @@
+---
+title: "diagram_test"
+---
+
+## DiagrammeR
+
+::: {#fig-normality-test}
+```{mermaid}
+graph TD;
+    A[Normality] -- Yes --> B[Parametric];
+    A -- No --> C[Non-Parametric];
+    B --> D[Equal Variances];
+    D -- Yes --> E[Independent two-sample t-test];
+    D -- No --> F[Welch t-test];
+    C --> G[Mann-Whitney U-test];
+
+```
+Decision tree for selecting statistical tests based on normality and variance equality.
+:::
+
+
